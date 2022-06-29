@@ -15,7 +15,7 @@ public class ScanPaymentDirectoryImpl implements ScanPaymentDirectory {
     public File ScanDirectory() {
         File folder = new File(tempDrectory);
         File[] arrFiles = folder.listFiles();
-        assert arrFiles != null;
+//        assert arrFiles != null;
         List<File> listScanFile = new ArrayList<>(Arrays.asList(arrFiles));
         listScanFile.removeIf(file -> !file.isFile());
         return FileIsCorrect(listScanFile);
