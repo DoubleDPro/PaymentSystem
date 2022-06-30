@@ -20,7 +20,6 @@ public class ScanPaymentDirectoryImpl implements ScanPaymentDirectory {
         File folder = new File(tempDirectory);
         //create arrays with folders and files in the C://Temp
         File[] arrFiles = folder.listFiles();
-//        assert arrFiles != null;
         List<File> listScanFile = new ArrayList<>(Arrays.asList(arrFiles));
         //delete folders in the list:
         listScanFile.removeIf(file -> !file.isFile());
