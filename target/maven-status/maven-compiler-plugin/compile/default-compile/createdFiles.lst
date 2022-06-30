@@ -1,0 +1,6 @@
+ru\magnitom\paymentsystem\application\RunApplication.class
+ru\magnitom\paymentsystem\api\scanfile\ScanPaymentDirectory.class
+ru\magnitom\paymentsystem\api\scanfile\ExtensionDefinition.class
+ru\magnitom\paymentsystem\api\scanfile\SwitchToParsFile.class
+ru\magnitom\paymentsystem\PaymentSystemApplication.class
+ru\magnitom\paymentsystem\implementation\ScanPaymentDirectoryImpl.class
