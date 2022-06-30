@@ -14,8 +14,6 @@ public class PaymentFileDbImpl implements PaymentFileDB {
     @Autowired
     PaymentFileRepository paymentFileRepository;
 
-
-
     @Override
     public void addFilePayment(List<File> listPayment) {
         for (File file: listPayment){

@@ -3,7 +3,7 @@ package ru.magnitom.scanpayment.application;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import ru.magnitom.scanpayment.api.PaymentFileDB;
+//import ru.magnitom.scanpayment.api.PaymentFileDB;
 import ru.magnitom.scanpayment.api.ScanPaymentDirectory;
 
 import java.io.File;
