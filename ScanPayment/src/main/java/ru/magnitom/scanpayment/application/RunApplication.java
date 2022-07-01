@@ -23,7 +23,7 @@ public class RunApplication implements CommandLineRunner {
     public void run(String... args) throws IOException {
         //getting the list of correct Payment File
         List<File> paymentFile = scanPaymentDirectory.scanDirectory();
-        //add payment fail to the DB
+        //add payment file to the DB
         paymentFileDB.addFilePayment(paymentFile);
     }
 }

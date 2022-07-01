@@ -1,0 +1,7 @@
+create table "PaymentFile"
+(
+    id      serial
+        constraint paymentfile_pk
+            primary key,
+    payment text
+);

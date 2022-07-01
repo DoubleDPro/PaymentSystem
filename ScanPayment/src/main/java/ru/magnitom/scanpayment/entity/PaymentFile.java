@@ -1,21 +1,26 @@
 package ru.magnitom.scanpayment.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+
+
 @Entity
+//@Table(name = "Paymentfile")
 public class PaymentFile {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int id;
 
-    private String paymentFile;
+    @Column(name = "payment")
+    private String payment;
+
+    public PaymentFile(String payment) {
+        this.payment = payment;
+    }
+
+    public PaymentFile() {
+
+    }
 }
