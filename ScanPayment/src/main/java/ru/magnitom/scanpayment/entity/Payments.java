@@ -10,6 +10,12 @@ public class Payments {
     private Integer id;
 
     private String payment;
+    private  String typeFile;
+
+    public Payments(String payment, String typeFile) {
+        this.payment = payment;
+        this.typeFile = typeFile;
+    }
 
     public Payments(String payment) {
         this.payment = payment;

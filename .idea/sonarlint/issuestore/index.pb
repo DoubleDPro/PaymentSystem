@@ -25,13 +25,5 @@ z
 JParseFiles/src/main/java/ru/magnitom/parsefiles/ParseFilesApplication.java,b\d\bd7c333179e77315c80f508f06e04c7913dd8acc
 
 OParseFiles/src/test/java/ru/magnitom/parsefiles/ParseFilesApplicationTests.java,1\5\15b50195496a16750d3885b786a50452466dc62b
-B
-ParseFiles/pom.xml,9\8\98940be47b3d38465f01c94ca843882c275b4b7a
 w
 GScanPayment/src/test/java/ru/magnitom/scanpayment/ScanPaymentTests.java,1\d\1dd28bdf8ec6a777db0f0140cb46451ceaf929ab
-{
-KScanPayment/src/main/java/ru/magnitom/scanpayment/api/SwitchToParsFile.java,2\d\2d0a8c87ecbb30f57fd0daadc04114e665d04923
-~
-NScanPayment/src/main/java/ru/magnitom/scanpayment/api/ExtensionDefinition.java,5\6\568f09fbd4c7095e20fff3e7b5a6a7a0fb79bee3
-x
-HScanPayment/src/main/java/ru/magnitom/scanpayment/api/PaymentFileDB.java,2\d\2dd0f8b613751a723b3305acffbfaf6e9a2e08cc

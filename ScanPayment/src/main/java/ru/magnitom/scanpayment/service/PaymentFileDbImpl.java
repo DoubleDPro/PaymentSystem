@@ -19,7 +19,16 @@ public class PaymentFileDbImpl implements PaymentFileDB {
     @Override
     public void addFilePayment(List<File> listPayment) {
         for (File file : listPayment) {
-            paymentFileRepository.save(new Payments(file.getPath()));
+            String extension;
+            if (file.getName().endsWith("txt")){
+                extension = "txt";
+            } else if (file.getName().endsWith("json")){
+                extension = "json";
+            } else {
+                extension = "xml";
+            }
+            System.out.println(extension + "   -   " + file.getPath());
+            paymentFileRepository.save(new Payments(file.getPath(), extension));
         }
     }
 }
