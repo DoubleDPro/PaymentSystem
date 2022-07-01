@@ -21,8 +21,6 @@ E
 ParseFiles/.gitignore,a\6\a6871a322f76d311665e9f6a79b49649a04726a3
 ?
 ParseFiles/mvnw,7\1\71135b4720eef7b25630b6585444c53d76ab6f62
-z
-JParseFiles/src/main/java/ru/magnitom/parsefiles/ParseFilesApplication.java,b\d\bd7c333179e77315c80f508f06e04c7913dd8acc
 
 OParseFiles/src/test/java/ru/magnitom/parsefiles/ParseFilesApplicationTests.java,1\5\15b50195496a16750d3885b786a50452466dc62b
 w
