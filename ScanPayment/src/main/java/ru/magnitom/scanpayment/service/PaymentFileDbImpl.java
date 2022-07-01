@@ -3,11 +3,12 @@ package ru.magnitom.scanpayment.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.magnitom.scanpayment.api.PaymentFileDB;
-import ru.magnitom.scanpayment.entity.PaymentFile;
+import ru.magnitom.scanpayment.entity.Payments;
 import ru.magnitom.scanpayment.repository.PaymentFileRepository;
 
 import java.io.File;
 import java.util.List;
+
 
 @Service
 public class PaymentFileDbImpl implements PaymentFileDB {
@@ -17,6 +18,8 @@ public class PaymentFileDbImpl implements PaymentFileDB {
 
     @Override
     public void addFilePayment(List<File> listPayment) {
-        paymentFileRepository.save(new PaymentFile("123"));
+        for (File file : listPayment) {
+            paymentFileRepository.save(new Payments(file.getPath()));
+        }
     }
 }

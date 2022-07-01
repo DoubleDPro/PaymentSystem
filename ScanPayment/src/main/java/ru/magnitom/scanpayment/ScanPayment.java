@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 
 
 @SpringBootApplication
-//@EntityScan("ru.magnitom.scanpayment.entity")
+@EntityScan("ru.magnitom.scanpayment.entity")
 //@EnableJpaRepositories("ru.magnitom.scanpayment.repository")
 //@ComponentScan("ru.magnitom.scanpayment")
 public class ScanPayment {
