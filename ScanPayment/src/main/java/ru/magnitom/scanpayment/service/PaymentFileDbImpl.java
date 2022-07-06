@@ -17,6 +17,10 @@ public class PaymentFileDbImpl implements PaymentFileDB {
 
     @Override
     public void addFilePayment(List<File> listPayment) {
-        paymentFileRepository.save(new PaymentFile("123"));
+        for (File file :
+                listPayment) {
+            paymentFileRepository.save(new PaymentFile(file.getPath()));
+        }
+
     }
 }
