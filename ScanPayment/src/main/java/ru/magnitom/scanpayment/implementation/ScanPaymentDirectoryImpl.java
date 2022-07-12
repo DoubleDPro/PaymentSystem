@@ -46,7 +46,7 @@ public class ScanPaymentDirectoryImpl implements ScanPaymentDirectory {
     @Override
     public List<File> removeAndPullFile(List<File> listScanFile) throws IOException {
         for (File file : listScanFile) {
-            Files.copy(file.toPath(), Paths.get(paymentDirectory.concat("\\" + file.getName())), StandardCopyOption.REPLACE_EXISTING);
+            Files.copy(file.toPath(), Paths.get(paymentDirectory.concat(File.separator + file.getName())), StandardCopyOption.REPLACE_EXISTING);
             Files.delete(Paths.get(file.getPath()));
         }
         File folder = new File(paymentDirectory);

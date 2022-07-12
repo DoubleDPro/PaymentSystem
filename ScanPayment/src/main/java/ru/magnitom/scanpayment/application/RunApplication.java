@@ -5,7 +5,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import ru.magnitom.scanpayment.api.PaymentFileDB;
 import ru.magnitom.scanpayment.api.ScanPaymentDirectory;
-import ru.magnitom.scanpayment.api.SwitchToParsFile;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,9 +12,6 @@ import java.util.List;
 
 @Component
 public class RunApplication implements CommandLineRunner {
-
-    @Autowired
-    SwitchToParsFile switchToParsFile;
 
     @Autowired
     ScanPaymentDirectory scanPaymentDirectory;

@@ -9,8 +9,11 @@ import java.util.List;
 @Component
 public interface ScanPaymentDirectory {
 
-    String tempDirectory = "C:\\Temp";
-    String paymentDirectory = "C:\\Temp\\PaymentDirectory";
+//    String tempDirectory = "C:\\Temp"; //for Windows path
+//    String paymentDirectory = "C:\\Temp\\PaymentDirectory";//for Windows path
+
+    String tempDirectory = "/home/pavel/temp";
+    String paymentDirectory = "/home/pavel/temp/PaymentDirectory";
 
     List<File> scanDirectory() throws IOException;
 

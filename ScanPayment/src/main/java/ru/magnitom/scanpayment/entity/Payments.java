@@ -4,12 +4,16 @@ package ru.magnitom.scanpayment.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "payments")
 public class Payments {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
+    @Column(name = "payment")
     private String payment;
+    @Column(name = "type_file")
     private  String typeFile;
 
     public Payments(String payment, String typeFile) {
