@@ -4,7 +4,7 @@ package ru.magnitom.parsefiles.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "parse_xml_payment")
+@Table(name = "parsexmlpayment")
 public class ParseXmlPayment {
 
     @Id
@@ -12,18 +12,22 @@ public class ParseXmlPayment {
     @Column(name = "id")
     Integer id;
 
-    @Column(name = "fromPay")
-    String from;
+    @Column(name = "frompay")
+    String fromPay;
 
-    @Column(name = "toPay")
-    String to;
+    @Column(name = "topay")
+    String toPay;
 
     @Column(name = "amount")
     Integer amount;
 
-    public ParseXmlPayment(String from, String to, Integer amount) {
-        this.from = from;
-        this.to = to;
+    public ParseXmlPayment(String fromPay, String toPay, Integer amount) {
+        this.fromPay = fromPay;
+        this.toPay = toPay;
         this.amount = amount;
+    }
+
+    public ParseXmlPayment() {
+
     }
 }

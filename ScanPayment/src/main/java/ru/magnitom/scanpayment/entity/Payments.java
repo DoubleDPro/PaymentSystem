@@ -16,6 +16,8 @@ public class Payments {
     @Column(name = "type_file")
     private  String typeFile;
 
+    boolean paymentCompleted = false;
+
     public Payments(String payment, String typeFile) {
         this.payment = payment;
         this.typeFile = typeFile;
@@ -59,5 +61,13 @@ public class Payments {
 
     public void setPayment(String payment) {
         this.payment = payment;
+    }
+
+    public boolean isPaymentCompleted() {
+        return paymentCompleted;
+    }
+
+    public void setPaymentCompleted(boolean paymentCompleted) {
+        this.paymentCompleted = paymentCompleted;
     }
 }

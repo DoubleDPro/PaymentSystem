@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import ru.magnitom.parsefiles.api.PaymentParseFile;
+import ru.magnitom.scanpayment.entity.Payments;
+
+import java.util.List;
 
 
 @Component
@@ -14,7 +17,9 @@ public class RunParseFiles implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        paymentParseFile.getFile();
-
+        //get XML payments from DB
+        List<Payments> listXmlPay = paymentParseFile.getFile();
+        //parse XML payments and write to DB
+        paymentParseFile.parseFileAndWriteToDB(listXmlPay);
     }
 }
